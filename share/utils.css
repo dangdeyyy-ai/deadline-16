@@ -4018,6 +4018,6 @@ button {
         margin-top: 100px;
     }
     .text-up {
-        text-transform: lowercase;
+        text-transform: none;
     }
 }
