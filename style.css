@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "michroma";
+    background-color: #101417;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    body {
+        gap: 10px;
+    }
+}
+
+.header {
+    button {
+        width: 178px;
+        height: 46px;
+    }
+}
+
+.hero {
+    button {
+        width: 441px;
+        height: 85px;
+    }
+    @media only screen and (max-width: 1024px) {
+        button {
+            width: 340px;
+            height: 70px;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        button {
+            width: 187px;
+            height: 43px;
+        }
+    }
+}
+
+.section1 {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px 30px;
+    }
+    .box {
+        width: 350px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 1186px) {
+        .content {
+            gap: 30px 50px;
+        }
+        .box {
+            margin-top: 0;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        .box {
+            width: 300px;
+        }
+        .happyFace {
+            width: 80px;
+            height: 80px;
+        }
+        .medal {
+            width: 53px;
+            height: 80px;
+        }
+        .hat {
+            width: 112px;
+            height: 80px;
+        }
+        .bag {
+            width: 80px;
+            height: 80px;
+        }
+        .schedule {
+            width: 73px;
+            height: 80px;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .happyFace {
+            width: 60px;
+            height: 60px;
+        }
+        .medal {
+            width: 40px;
+            height: 60px;
+        }
+        .hat {
+            width: 84px;
+            height: 60px;
+        }
+        .bag {
+            width: 60px;
+            height: 60px;
+        }
+        .schedule {
+            width: 55px;
+            height: 60px;
+        }
+    }
+}
+
+.section2 {
+    .card {
+        padding: 50px 30px 30px 30px;
+        border-radius: 20px;
+        border: 1px solid white;
+        background-color: #ffffff0d;
+        width: calc((100% - 30px * 2) / 3);
+        height: 470px;
+        button {
+            width: 180px;
+            height: 46px;
+        }
+    }
+    .card#Tablet {
+        display: none;
+    }
+    .horn {
+        width: 90px;
+        height: 90px;
+    }
+    .camera {
+        width: 90px;
+        height: 87px;
+    }
+    .brain {
+        width: 90px;
+        height: 90px;
+    }
+    .network {
+        width: 90px;
+        height: 90px;
+    }
+    @media only screen and (max-width: 1024px) {
+        .card {
+            width: 100%;
+        }
+        .card#Tablet {
+            display: flex;
+        }
+        .card#PC {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .card {
+            padding: 30px 20px 20px 20px;
+            height: 340px;
+            button {
+                width: 148px;
+                height: 43px;
+            }
+        }
+        .card#Mobile {
+            display: none;
+        }
+        .horn {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+.section3 {
+    .container {
+        width: 100%;
+    }
+    @media only screen and (max-width: 1100px) {
+        .container {
+            width: 95%;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .box {
+        width: 383px;
+    }
+    .file {
+        width: 100px;
+        height: 100px;
+    }
+    .tick {
+        width: 100px;
+        height: 100px;
+    }
+    .diamond {
+        width: 123px;
+        height: 100px;
+    }
+    @media only screen and (max-width: 1024px) {
+        .content {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px 17px;
+        }
+        .box {
+            width: 300px;
+        }
+        .file {
+            width: 80px;
+            height: 80px;
+        }
+        .tick {
+            width: 80px;
+            height: 80px;
+        }
+        .diamond {
+            width: 98px;
+            height: 80px;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .file {
+            width: 60px;
+            height: 60px;
+        }
+        .tick {
+            width: 60px;
+            height: 60px;
+        }
+        .diamond {
+            width: 74px;
+            height: 60px;
+        }
+    }
+}
+
+.section4 {
+    .card {
+        background-color: #ffffff0d;
+        border-radius: 20px;
+        border: 1px solid white;
+        width: 380px;
+        padding: 61px 29px;
+    }
+    .card#Tablet {
+        display: none;
+    }
+    .textIcon {
+        width: 30px;
+        height: 22px;
+    }
+    @media only screen and (max-width: 1024px) {
+        .card {
+            width: 100%;
+            padding: 61px 20px;
+        }
+        .card#Tablet {
+            display: flex;
+            padding: 50px 20px;
+        }
+        .card#PC {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .card#Mobile {
+            display: none;
+        }
+        .card#Tablet {
+            padding: 30px 20px;
+        }
+        .smile {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+.section5 {
+    button {
+        width: 836px;
+        height: 85px;
+    }
+    @media only screen and (max-width: 1024px) {
+        button {
+            width: 554px;
+            height: 61px;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        button {
+            width: 179px;
+            height: 43px;
+        }
+    }
+}
+
+.footer {
+    padding: 50px 0 100px 0;
+    .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 50px;
+    }
+    .row1#Tablet {
+        display: none;
+    }
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 50px;
+    }
+    @media only screen and (max-width: 1024px) {
+        .row1#Tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row1#PC {
+            display: none;
+        }
+        .row2 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .row1#Tablet {
+            display: none;
+        }
+        .row1#PC {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+        padding: 30px 0 50px 0;
+    }
+}
