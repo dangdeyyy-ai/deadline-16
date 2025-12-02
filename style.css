@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    overflow-x: hidden;
+    position: relative;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -21,6 +23,45 @@ body {
 @media only screen and (max-width: 660px) {
     body {
         gap: 10px;
+    }
+}
+
+.background {
+    height: 4083px;
+    width: 2374px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background.PC {
+    width: 2374px;
+}
+
+.background.Tablet {
+    width: 1520px;
+}
+
+.background.Mobile {
+    width: 700px;
+    height: 3000px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .background.PC {
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .background.Tablet {
+        width: 768px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .backgroundTablet {
     }
 }
 
