@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     font-family: "michroma";
     background-color: #101417;
@@ -32,41 +28,14 @@ body {
 
 .background {
     height: 4083px;
-    width: 2374px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-
-.background.PC {
-    width: 1574px;
-}
-
-.background.Tablet {
-    width: 1520px;
-}
-
 .background.Mobile {
-    width: 700px;
     height: 3000px;
-}
-
-@media only screen and (max-width: 1200px) {
-    .background.PC {
-        width: 1200px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .background.Tablet {
-        width: 768px;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    .backgroundTablet {
-    }
 }
 
 .header {
